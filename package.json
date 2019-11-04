@@ -1,19 +1,14 @@
 {
-  "name": "travis-lab",
+  "name": "node-hello-world",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello world",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HAlayon/travis-lab.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HAlayon/travis-lab/issues"
-  },
-  "homepage": "https://github.com/HAlayon/travis-lab#readme"
+  "dependencies": {
+    "jest": "^23.6.0",
+    "express": "^4.16.3"
+  }
 }
