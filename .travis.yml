@@ -8,7 +8,7 @@ script:
 deploy:
   local_dir: dist
   provider: pages
-   edge: true
+  edge: true
   skip_cleanup: $GITHUB_TOKEN
   keep_history: true
   on:
