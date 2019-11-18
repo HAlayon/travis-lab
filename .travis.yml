@@ -6,7 +6,9 @@ install:
 script:
   - npm run test
 deploy:
-  provider: heroku
-  api_key:
-    secure: 4cd3135e-3469-47f8-baca-ebba2a0bb6e4
-  app: travis-labb  
+  local_dir: dist
+  provider: pages
+  skip_cleanup: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
